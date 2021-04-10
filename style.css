@@ -1,0 +1,379 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#F5F5F5;
+	font-family: 'Roboto', sans-serif;
+}
+#wrapper{
+	width:960px;
+	padding:20px;
+	margin:0px auto;
+	/*background:#e6f2ff;*/
+	background:ghostwhite;     /*#F5F5F5;*/
+	border-radius:10px;
+	box-shadow: 2px 8px 8px 6px #888888;
+}
+
+#header{
+	background:white;
+	display:flex;
+	  position:fixed;
+	  top:0px;
+	  z-index:1;
+	  width:960px;
+	  border-radius:10px;
+	 display: flex;
+     justify-content:space-between; 
+
+}
+
+#nav ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	
+}
+#nav ul li{
+	float:right;
+	position:relative;
+}
+
+#nav ul li a{
+	color:black;
+	display:inline-block;
+	padding:10px;
+	font-size:20px;
+	text-decoration:none;
+	height:20px;
+}
+#nav ul li a:hover{
+	background:orange;
+	
+}
+#nav ul li ul{
+	position:absolute;
+	top:40px;
+	width:140px;
+	left:0px;
+   display:none;
+}
+#nav ul li ul li{
+	float:none;
+	background:white;
+}
+#nav ul li:hover ul {
+	display:block;	
+	
+}
+#hero{
+    margin-top:40px;
+	margin-bottom:20px;
+	/*position:relative;*/
+ 	
+}
+#products{
+	 display:flex;
+	 background:lightgray;
+	/*background:#FFFAF0;*/
+	 justify-content:space-between;
+	 border:2px solid white;
+	 border:1px solid gray;
+	 padding:20px;
+	 margin-bottom:20px;
+	
+}
+#products .product{
+	border:1px solid gray; /*#787878*/
+	padding:20px;
+	background:white;
+	width:250px;
+	text-align:center;
+	box-shadow: 1px 2px 6px 2px #888888;
+
+}
+#products a{
+	text-decoration:none;
+}
+.product:hover{
+	background:ghostwhite;
+}
+
+#main{  
+    display:inline-flex;
+	margin-bottom:20px;
+	border:1px solid black;
+	width:200px;
+	padding:10px;
+	margin:4px;
+	border-radius:10px;
+	background:white;
+	text-align:center;
+}
+#main div{
+margin:0px auto;
+}
+#main h2{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+#glavni{
+	margin-bottom:20px;
+	width:800px;
+}
+#sidebar{
+	border:1px solid black;
+	width:200px;
+	padding:20px;
+	margin:10px;
+	border-radius:10px;
+	float:right;
+	/*background:#cce6ff;*/
+	background:#F8F8FF;
+		box-shadow: 1px 2px 6px 2px #888888;
+}
+
+#footer{
+	background:lightgray;
+	clear:both;
+	padding:20px;
+	overflow:hidden;
+	border:1px solid gray;
+}
+#copyright{
+	margin:0px;
+	clear:both;
+ 	text-align:center;
+    border-top:3px solid white;	
+}
+#footerLogo{
+	float:left;
+	padding:10px;
+}
+#fb{
+	float:right;
+	margin:5px;
+}
+
+.notFront #main{
+	display:flex;
+	border:1px solid black;
+	width:300px;
+	margin:0px auto;
+	text-align:center;
+	background:white;
+}
+.notFront #main div{
+margin:0px auto;
+}
+.notFront #main div img{
+height:250px;
+}
+
+.notFront input[type=submit]:hover{
+	background-color:orange;
+}
+.notFront input[type=button]:hover{
+	background-color:orange;
+}
+.notFront #tabela th{
+	color:#8B0000;
+}
+.notFront #tabela{
+	float:right;
+	border:1px solid black;
+	width:400px;
+}
+.notFront input[type=submit],input[type=button] {
+    padding:9px;
+	font-size:12px;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;	
+}
+.notFront textarea
+{
+	background:#FFEBCD;
+	border-radius:5px;
+}
+.notFront input[type=text]
+{
+	background:#FFEBCD;
+	border-radius:5px;
+	padding:7px;
+}
+#sidebar ul{
+	list-style:none;
+	padding:0px;
+}
+#sidebar ul li a{
+display:inline-block;
+padding:5px;
+
+padding:5px;
+color:black;
+border-radius:10px;
+}
+#sidebar ul a{
+text-decoration:none;
+}
+
+
+#sidebar ul li{
+	outline:0; 
+  font-size:1em;
+  font-weight:600;
+  color:black;
+  background:#fff;
+  border:none;
+  padding:5px;
+  margin:3px;
+  border:1px solid black;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),	
+}
+#sidebar ul li:hover {
+  background-color: #FF8C00;
+  background:black;
+  color: white;
+}
+.notfront2 #sidebar{
+	display:block;
+}
+#detaljiLink
+{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	background:gray;
+	box-shadow:14px black;
+	border:1px solid black;	
+	padding:6px;
+	font-size:11px;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+    text-decoration:none;
+  
+	
+}
+#detaljiLink:hover{
+	background:orange;
+	padding:8px;
+	font-size:12;
+	color:black;
+}
+#pretraga{
+	padding:3px;
+	margin-top:7px;
+	border-radius:6px;
+	margin-left:10px;
+	background:white;
+
+}
+#divPretraga{
+	width:200px;
+	height:40px;
+    padding:2px;
+	background:white;
+	border-radius:12px;
+	box-shadow: 1px 2px 6px 2px #888888;
+}
+
+#divPretraga  i{
+	font-size:22px;
+	color:#777;
+}
+#divPretraga input{
+height:30px;
+border:none;
+outline:none;
+font-size:13px;
+}
+section {
+    padding: 30px 0;
+} /* ovo sam napravio samo da bi sekciju odvojio od ivice browsera */
+
+.container {
+	float:left;
+    max-width:670px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom:20px;
+} /* ovaj container sam napravio samo da bi centrirao tabelu lepo */
+
+/* Table Headline */
+.headline {
+    padding: 0 0 0 20px;
+} /* pomerio sam h2 malo od leve strane */
+.headline h2 {
+    font-size: 36px;
+    font-weight: 700px;
+    color: #444444;
+}
+
+/* Table */
+.tabela {
+    width: 100%;
+    border-spacing: 0;
+} /* Stavio sam width100% da svako polje uzme 100% svoje sirine i border-spacing sam stavio na nulu da ne bi odvajao polja */
+.tabela th,
+.tabela td {
+    padding: 20px;  /*odvaja th i td od ivica tabele, nikad se nece zalepiti za ivice polja*/
+    text-align: left;
+} 
+.tabela a {
+    text-decoration: none;
+    color: inherit;
+} /*stavio sam link u tabelu pa sam ga malo stilizovao samo da bude kao ostali td*/
+.tabela a:hover {
+    color: #ffa550;
+    
+}
+
+.tabela tr:nth-child(n) {
+    background-color: #ffffff;
+    color: #444444;
+} /* svaki prvi red ce imati background color i color za text */
+.tabela tr:nth-child(2n) {
+    background-color: #444444;
+    color: #ffffff;
+} /* svaki drugi red ce imati background color i color za text */
+.form-style{
+border:1px solid black;
+width:500px;
+ padding:5px;
+ border-radius:10px;
+ background:white;
+ text-align:center;
+ clear:both
+}
+#pagination a{
+	text-decoration:none;
+	padding:2px;
+	margin:2px;
+	border:1px solid black;
+	color:black;
+	background:orange;
+}
+#pagination{
+	margin-left:280px;
+}
+
+#pagination button{
+	outline:none;
+	border:1px solid black;
+	width:30px;
+	height:30px;
+	margin:2px;
+	cursor:pointer;
+}
+#pagination button:hover{
+background:gray;
+}
+
+
+
+
